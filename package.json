@@ -1,0 +1,26 @@
+{
+  "name": "@simplesplit/react",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "dev": "rimraf ./node_modules/react | rollup --config rollup.config.js --watch",
+    "build:types": "tsc --declaration true --outDir types --emitDeclarationOnly",
+    "build": "rollup --config rollup.config.js"
+  },
+  "author": "simplesplit.io",
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/react": "^18.0.18",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  }
+}
